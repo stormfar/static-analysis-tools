@@ -7,7 +7,7 @@ interface User {
     first: string;
     middle: string;
     last: string;
-    age: number;
+    age?: number;
   };
 }
 function getFullName(user: User): string {
@@ -17,6 +17,6 @@ function getFullName(user: User): string {
   return [first, middle, last].filter(Boolean).join("");
 }
 
-add(1, "2");
+add(1, 2);
 
 getFullName({name: {first: "Joe", middle: "Bud", last: "Matthews"}});
