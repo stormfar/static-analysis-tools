@@ -7,7 +7,7 @@ interface User {
     first: string;
     middle: string;
     last: string;
-    age?: number;
+    age: number;
   };
 }
 function getFullName(user: User): string {
